@@ -12,7 +12,7 @@ Xem các cuộc thi CTF sắp mở tại [CTFtime](https://ctftime.org/).
 | CTF | link
 | ------ | ------ |
 | miniCTF | [2020](miniCTF2020/readme.md) |
-| J2 | [2020.1](J2TEAMCTF-Writeups/part1.md) [2020.2](J2TEAMCTF-Writeups/par2.md) |
+| J2 | [2020.1](../../../J2TEAMCTF-Writeups/blob/main/part1.md) [2020.2](../../../J2TEAMCTF-Writeups/blob/main/part2.md) |
 
 ### Beginner Recommended CTFs
 Một vài cuộc thi thích hợp cho beginner để bắt đầu: 
