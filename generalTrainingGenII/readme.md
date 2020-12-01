@@ -10,6 +10,7 @@ Writeup dành cho các challenges trong thời gian Training của Gen II CLB IS
  | [Super panic](#2-super-panic) | Forensic | `ispclub{h3y_br0_c4lm_d0wn}` |
  | [pyRev](#3-pyrev) | Programming | `ispclub{5up3r_345Y_cH4ll3ng3}` |
  | [shiftNbases](#4-shiftnbases) | Crypto | `ispclub{Tat_ca_moi_nguoi_deu_sinh_ra_co_quyen_binh_dang._Tao_hoa_cho_ho_nhung_quyen_khong_ai_co_the_xam_pham_duoc;_trong_nhung_quyen_ay,_co_quyen_duoc_song,_quyen_tu_do_va_quyen_muu_cau_hanh_phuc._Loi_bat_hu_ay_o_trong_ban_Tuyen_ngon_Doc_lap_nam_1776_cua_nuoc_My._Suy_rong_ra,_cau_ay_co_y_nghia_la:_tat_ca_cac_dan_toc_tren_the_gioi_deu_sinh_ra_binh_dang,_dan_toc_nao_cung_co_quyen_song,_quyen_sung_suong_va_quyen_tu_do._Ban_Tuyen_ngon_Nhan_quyen_va_Dan_quyen_cua_Cach_mang_Phap_nam_1791_cung_noi:_Nguoi_ta_sinh_ra_tu_do_va_binh_dang_ve_quyen_loi;_va_phai_luon_luon_duoc_tu_do_va_binh_dang_ve_quyen_loi._Do_la_nhung_le_phai_khong_ai_choi_cai_duoc.}` |
+ | [ascii64+](#5-ascii64+) | Web | `ispclub{hemmeligheder_afsløres_altid}` |
   
   
   
@@ -370,4 +371,70 @@ Flag:
 ```
 ispclub{Tat_ca_moi_nguoi_deu_sinh_ra_co_quyen_binh_dang._Tao_hoa_cho_ho_nhung_quyen_khong_ai_co_the_xam_pham_duoc;_trong_nhung_quyen_ay,_co_quyen_duoc_song,_quyen_tu_do_va_quyen_muu_cau_hanh_phuc._Loi_bat_hu_ay_o_trong_ban_Tuyen_ngon_Doc_lap_nam_1776_cua_nuoc_My._Suy_rong_ra,_cau_ay_co_y_nghia_la:_tat_ca_cac_dan_toc_tren_the_gioi_deu_sinh_ra_binh_dang,_dan_toc_nao_cung_co_quyen_song,_quyen_sung_suong_va_quyen_tu_do._Ban_Tuyen_ngon_Nhan_quyen_va_Dan_quyen_cua_Cach_mang_Phap_nam_1791_cung_noi:_Nguoi_ta_sinh_ra_tu_do_va_binh_dang_ve_quyen_loi;_va_phai_luon_luon_duoc_tu_do_va_binh_dang_ve_quyen_loi._Do_la_nhung_le_phai_khong_ai_choi_cai_duoc.}
 ```  
+# 5. ascii64+
 
+[snyde.js](https://github.com/ispclub/generalTraining/blob/main/ctf/snyde.js)
+
+Bài này cơ bản việc chúng ta phải làm đó là decode đoạn output:
+```
+<~<AI$bA4K[9=>;<a2`Y\h;`$j79M&/LAi4]g:dmiu<bHA2G#W'BE(+5S=u&Eg:N0`XBJb!TB5;^73&X;n:es&[5t5ck.s<X]@UjCf7VHa<Dc&Y\~>
+```
+Để output ra mình sẽ kiểm tra function checkPass khi function này trả về true thì kết quả mới trả về output đúng của chương trình.
+
+Đầu vào là 2 giá trị `username` và `password` kiểu tra giá trị đúng trả về `true`
+
+```javascript
+for (let i = 0; i < user.length; i++) {
+    if ((username.charCodeAt(i) + password.charCodeAt(i) + i * 10) !== key_check.charCodeAt(i)) {
+        return false
+    }
+}
+```
+`password` là thứ mình phải tìm. Method `charCodeAt(i)` trả về mã ascii của kí tự tại vị trí `i` trong chuỗi.
+Example:
+Có chuỗi `isp` mình muốn chuyển thành các kí tự ascii.
+| character | ascii code |
+|-----------|------------|
+| i         | 105        |
+| s         | 115        |
+| p         | 112        | 
+
+Muốn tìm được `pass` mình sẽ reverse phép toán trên bằng cách:
+```javascript
+key_check.charCodeAt(i) - i * 10 - user.charCodeAt(i)
+```
+Kết quả trả về là mã ascii của kí tự tại vị trí `i` của biến `pass`.
+Đầu xuôi đuôi lot rồi bây giờ mình sẽ dùng hàm `String.fromCharCode(char)` để trả về character với mã ascii tương ứng
+Mình sẽ viết lại code như sau:
+```javascript
+let pass = ''
+for (let i = 0; i < user.length; i++) {
+    pass += String.fromCharCode(key_check.charCodeAt(i) - i * 10 - user.charCodeAt(i))   
+}
+console.log(pass)
+```
+Done, kết quả thu được giá trị của `pass` là `Hint: ascii85`.
+Wow, người ra đề thật là thú vị đề bài vừa là hint lại vừa là đáp án
+```javascript
+const { encode } = require('./ascii.js')
+```
+Đây chắc chắn là hàm encode base85
+Đến lúc decode, mình sử dụng https://cryptii.com/pipes/ascii85-encoding
+
+![](https://i.imgur.com/KxA3KTt.png)
+
+Thu được chuỗi sau khi decode:
+```
+U2FsdGVkX1+679ljS4CKLISBf5u5PEFxVgp8vTfEpEboZ2BwOpakh4yrgkwv86HAPO8bAFoS+v1ibcqcFhpQoQ==
+```
+`CryptoJS` là một thư viện hỗ trợ rất nhiều các công cụ mã hóa cho javascipt. `AES` là một trong số các thuật toán mã hóa khối phổ biến hiện nay. Mã hóa này vừa có thể mã hóa và vừa có thể giải mã...
+Thông tin thêm: https://vi.wikipedia.org/wiki/Advanced_Encryption_Standard
+Mình sẽ decrypt chuỗi trên với `pass` tìm được ban nãy, sử dụng: https://www.browserling.com/tools/aes-decrypt
+
+![](https://i.imgur.com/yjpbNfc.png)
+
+Done :3, flag tìm được:
+```
+ispclub{hemmeligheder_afsløres_altid}
+```
+Solved Python: [snyde_solved.py](https://gist.github.com/meowier/ce7c6b08d5fb8b04159fbc20367d447a)
