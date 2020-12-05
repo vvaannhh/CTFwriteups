@@ -11,7 +11,7 @@ Writeup dành cho các challenges trong thời gian Training của Gen II CLB IS
  | [pyRev](#3-pyrev) | Programming | `ispclub{5up3r_345Y_cH4ll3ng3}` |
  | [shiftNbases](#4-shiftnbases) | Crypto | `ispclub{Tat_ca_moi_nguoi_deu_sinh_ra_co_quyen_binh_dang._Tao_hoa_cho_ho_nhung_quyen_khong_ai_co_the_xam_pham_duoc;_trong_nhung_quyen_ay,_co_quyen_duoc_song,_quyen_tu_do_va_quyen_muu_cau_hanh_phuc._Loi_bat_hu_ay_o_trong_ban_Tuyen_ngon_Doc_lap_nam_1776_cua_nuoc_My._Suy_rong_ra,_cau_ay_co_y_nghia_la:_tat_ca_cac_dan_toc_tren_the_gioi_deu_sinh_ra_binh_dang,_dan_toc_nao_cung_co_quyen_song,_quyen_sung_suong_va_quyen_tu_do._Ban_Tuyen_ngon_Nhan_quyen_va_Dan_quyen_cua_Cach_mang_Phap_nam_1791_cung_noi:_Nguoi_ta_sinh_ra_tu_do_va_binh_dang_ve_quyen_loi;_va_phai_luon_luon_duoc_tu_do_va_binh_dang_ve_quyen_loi._Do_la_nhung_le_phai_khong_ai_choi_cai_duoc.}` |
  | [ascii64+](#5-ascii64) | Web | `ispclub{hemmeligheder_afsløres_altid}` |
-  
+   | [mental-arithmetic](#6-mental-arithmetic) | Web | `ispclub{34sy_m4th_fck1ng_sh1t}` |
   
   
 # 1. Sudoku  
@@ -438,3 +438,132 @@ Done :3, flag tìm được:
 ispclub{hemmeligheder_afsløres_altid}
 ```
 Solved Python: [snyde_solved.py](https://gist.github.com/meowier/ce7c6b08d5fb8b04159fbc20367d447a)
+
+# 6. Mental Arithmetic
+
+[https://mental-arithmetic.herokuapp.com](https://mental-arithmetic.herokuapp.com)
+
+[Source](https://github.com/ispclub/generalTraining/tree/main/ctf/mental-arithmetic)
+
+Trang web hiện ra 1 phép toán và bắt ta phải tính toán rất là nhanh, mình sẽ dùng devtools để kiểm tra source và request:
+[main.js](https://mental-arithmetic.herokuapp.com/main.js)
+
+```javascript
+(() => {
+	document.addEventListener('DOMContentLoaded', () => {
+		fetch('api.php', {
+			method: 'GET',
+			credentials: 'include'
+		})
+			.then(res => res.json())
+			.then(data => {
+				if(data.status === 1) {
+					document.querySelector('.question h3').innerText = data.message
+				}
+			})
+		const answerSlide = document.getElementById('answer')
+		answerSlide.addEventListener('input', (e) => {
+			document.querySelector('.number-answer').innerText = e.target.value
+		})
+		const buttonSubmit =  document.getElementById('submit')
+		buttonSubmit.addEventListener('click', () => {
+			fetch('api.php', {
+				method: 'POST',
+				body: `answer=${answerSlide.value}`,
+				headers: {
+				    'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+				}
+			})
+				.then(res => res.json())
+				.then(data => {
+					document.querySelector('.result-check span').innerText = data.message
+				})
+		})
+	});
+})()
+```
+Nhìn qua mình thấy có 2 api được call từ hàm `fetch()` cùng đến từ request `api.php`
+Giờ sẽ kiểm tra request:
+
+![](https://i.imgur.com/QbYJoFp.png)
+
+![](https://i.imgur.com/CDLFlcR.png)
+
+Request đầu tiên khi ta mới load trang đó là request để lấy phép toán, mọi phép toán và các con số đều được random.
+
+Việc của mình bây giờ là làm sao để tính thật nhanh và gửi kết quả đó ngay lập tức.
+
+hmmm
+```javascript
+870702 - 41061 = 829641 
+```
+Dùng chuột rê thanh kéo đến giá trị `829641` :3 OMG
+Gửi đáp án thoai. Nhưng không vì mình đã tính quá chậm, phải làm sao bây giờ :<
+
+Response: `Tính nhẩm mà lâu zayyy`
+
+Oke, giờ mình sẽ thử dùng `fetch()` để lấy phép tính và gửi đáp án đồng thời.
+
+Tìm hiểu về API `fetch()` trong Javascript
+1. https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+2. https://developer.mozilla.org/vi/docs/Web/API/Fetch_API
+
+Đầu tiên cần lấy phép toán:
+
+```javascript
+fetch('api.php', {
+    method: 'GET'
+})
+    .then(res => res.json())
+    .then(console.log)
+```
+Cho vào console vào chạy mình đã lấy được phép toán mà server trả về.
+
+![](https://i.imgur.com/gEwK9uu.png)
+
+Trong javascript có 1 phương thức đó là `eval()` có chức năng tính toán biểu thức toán học hoặc thức thi mã lệnh tùy thuộc vào tham số mà người dùng truyền vào.
+Example: 
+```javascript
+eval(`123+12`)
+// 125
+
+eval(`12/2`)
+// 6
+
+eval(`145*4`)
+// 580
+```
+Mình sẽ áp dụng để thực thi tính và gửi kết quả cho bài toán trên:
+```javascript
+fetch('api.php', {
+    method: 'POST',
+    body: `answer=${eval(message)}`,
+    headers: {
+        'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+    }
+})
+    .then(res => res.json())
+    .then(console.log)
+    // message là phép toán truyền vào
+```
+Bây giờ mình sẽ kết hợp để gửi và lấy flag:
+```javascript
+fetch('api.php', {
+    method: 'GET'
+})
+    .then(res => res.json())
+    .then(data => {
+        fetch('api.php', {
+        method: 'POST',
+        body: `answer=${eval(data.message)}`,
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+        }
+    })
+        .then(res => res.json())
+        .then(console.log)
+})
+```
+![](https://i.imgur.com/UVf2E1d.png)
+
+Done :3
