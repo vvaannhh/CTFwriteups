@@ -567,3 +567,4 @@ fetch('api.php', {
 ![](https://i.imgur.com/UVf2E1d.png)
 
 Done :3
+Solved Python : [Repl.It](https://repl.it/@AresS/PleasantVelvetyDictionary#main.py)
