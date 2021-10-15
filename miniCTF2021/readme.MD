@@ -19,7 +19,7 @@
  | [Baika](#) | Forensic |  `ISPCLUB{ch0_b41k4_n0_jut5u}` |
  | [Chess but not so Stress](#) |General skill|`ISPCLUB{G4MB1T_QU3EN}` |
  | [Earth Hour](#) | General skill| `ISPCLUB{OUREARTH}` |
- | [Himitsu No Ninmu](#) | General skill| `ISPCLUB{w3lc0me_t0_1nn3r_s4nCtuM}` |
+ | [Himitsu No Ninmu](#miniCTF2021_file/himitsu-no-nimu/README.md) | General skill| `ISPCLUB{w3lc0me_t0_1nn3r_s4nCtuM}` |
  | [Start the new schoolyear](#) | General skill |`ISPCLUB{L1nux_1z_v3ry_c0nV3n1EnT}` |
  | [Sasuke’s Paw Encyclopedia](#) | General skill | `ISPCLUB{SO_WEIRD_CAT}` |
  | [Faster!!!](#) |Misc | `ISPCLUB{r1ck_r0ll_4g41n}`|
