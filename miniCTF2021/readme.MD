@@ -30,7 +30,7 @@
  | [Reverse no Jutsu]() | RE |`ISPCLUB{s3xY_n0_jnt5u_K4i_h4r3m}` |
  | [Kakureru]() | RE |`ISPCLUB{W3ll_c0m3_t0_r3vers!n9}` |
  | [Furipputon - Reveal of the Truth](#) | RE  |`ISPCLUB{DekuHoho}`|
- | [Isekai with truck-kun]() | Warm up |`ISPCLUB{p0w3R_oF_l0V3!!!}`|
+ | [Isekai with truck-kun](/miniCTF2021/miniCTF2021_file/isekai/README.md) | Warm up |`ISPCLUB{p0w3R_oF_l0V3!!!}`|
  | [PHP no jutsu]() | Web | `ISPCLUB{php_1s_Suck}`|
  | [Deku's Bird]()  | Web | `ISPCLUB{4_G00D_PL4Y3R}`|
  | [Kieru Odama Genso]() | Web | `ISPCLUB{c$$_!5_v3ry_34sy}`|
