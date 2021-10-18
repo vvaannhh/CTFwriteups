@@ -1,5 +1,4 @@
-# Author
-Iluvinn
+# Author: Iluvinn
 # Solve
 Đề bài cho ta 1 địa chỉ ip và khi kết nối đến nó bằng công cụ `netcat` ngay lập tức có flag xuất hiện
 ```
