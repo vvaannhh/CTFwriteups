@@ -51,8 +51,21 @@ quest: 1
 ```
 # Solve
 Đối với honest or tricky sẽ là 15 câu hỏi trong 100s và tricky or honest là 100 câu hỏi trong 60s <br>
-Qua vài lần thử thì có thể thấy server chỉ yêu cầu các phép toán cộng, trừ, nhân, chia vậy nên phương pháp làm đơn giản sẽ là đọc dữ liệu trả về từ server sau đó thực hiện tính toán và gửi trả lại kết quả
+Qua vài lần thử thì có thể thấy server chỉ yêu cầu các phép toán cộng, trừ, nhân, chia vậy nên phương pháp làm đơn giản sẽ là đọc dữ liệu trả về từ server sau đó thực hiện tính toán và gửi trả lại kết quả cho server
 ```
+# Honest or tricky
+from pwn import *
+p = remote("134.209.97.157", 10001)
+for i in range(15):
+	p.recvuntil("quest:")
+	p.recvuntil("\n")
+	r = p.recvuntil("=")
+	r = r.replace(" =","")
+	r = int(eval(r))
+	p.sendline(str(r))
+p.interactive()
+
+# Tricky or honest
 from pwn import *
 p = remote("134.209.97.157", 10002)
 for i in range(100):
@@ -63,6 +76,7 @@ for i in range(100):
 	r = int(eval(r))
 	p.sendline(str(r))
 p.interactive()
+
 ```
 Khi chạy file python ta sẽ có được flag <br>
 Honest or tricky
