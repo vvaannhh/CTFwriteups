@@ -49,6 +49,7 @@ Remember, you have 60s
 quest: 1
 15973591 * 62179688 = Too slow!!!No flag for you bae ¯\_(ツ)_/¯
 ```
+# Solve
 Đối với honest or tricky sẽ là 15 câu hỏi trong 100s và tricky or honest là 100 câu hỏi trong 60s <br>
 Qua vài lần thử thì có thể thấy server chỉ yêu cầu các phép toán cộng, trừ, nhân, chia vậy nên phương pháp làm đơn giản sẽ là đọc dữ liệu trả về từ server sau đó thực hiện tính toán và gửi trả lại kết quả
 ```
@@ -65,6 +66,7 @@ p.interactive()
 ```
 Khi chạy file python ta sẽ có được flag <br>
 Honest or tricky
+
 ```
 [+] Opening connection to 134.209.97.157 on port 10001: Done
 [*] Switching to interactive mode
@@ -73,10 +75,12 @@ ISPCLUB{m4th_f0R_dUmm13S!!!!!!!}
 [*] Got EOF while reading in interactive
 $  
 ```
+
 <br>
 Flag: ISPCLUB{m4th_f0R_dUmm13S!!!!!!!}
 <br>
-Tricky or honest
+Tricky or honest <br>
+
 ```
 iluvinn in ~/miniCTF2021 λ python solve.py    
 [+] Opening connection to 134.209.97.157 on port 10002: Done
