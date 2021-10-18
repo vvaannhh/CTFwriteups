@@ -9,7 +9,7 @@
  | ------ | ------  | ------ |
  | [Discord]() | Welcome |  `ISPCLUB {4r3_y0u_r34dy}` |
  | [Dōnyū]() | Welcome | `ISPCLUB{900D_LUCK_B4BY}` |
- | [Chuunin Exam]() |	Crypto	| `ISPCLUB{s3cr3t_pr0t3ct0r}` |
+ | [Chuunin Exam](/miniCTF2021/miniCTF2021_file/Chuunin-Exam/Chuunin-Exam.md) |	Crypto	| `ISPCLUB{s3cr3t_pr0t3ct0r}` |
  | [Base no Jutsu]() | Crypto |  `ISPCLUB{b4s3_1s_n0t_tk4t_d1ff1cult}` |
  | [Gravity Falls Bill]() | Crypto |  `ISPCLUB{BJLL_CJPKER}` |
  | [Covi no Dokumushi]() | Forensic | `ISPCLUB{11919}` |
