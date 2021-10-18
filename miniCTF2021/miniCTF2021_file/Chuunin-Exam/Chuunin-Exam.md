@@ -89,7 +89,11 @@ What is the messages? (remove spaces)
 ```
 
 Tìm kiếm với từ khoá Enigma ta thấy đây là cơ chế mã hoá có nguồn gốc từ Đức, được sử dụng trong thế chiến I và thế chiến II rất nhiều.
-Trong bài này thì ta đã được cho chi tiết các thông tin để [decode](https://cryptii.com/) Enigma rất dễ dàng.
+Trong bài này thì ta đã được cho chi tiết các thông tin để [decode](https://cryptii.com/) Enigma rất dễ dàng.  
+  
+![Enigma Decode](/miniCTF2021/miniCTF2021_file/Chuunin-Exam/enigma.png)  
+  
+  
 Plaintext:
 ```
 enigmaisformilitarycommunication
