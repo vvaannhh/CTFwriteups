@@ -21,12 +21,12 @@
  | [Earth Hour]() | General skill| `ISPCLUB{OUREARTH}` |
  | [Himitsu No Ninmu](/miniCTF2021/miniCTF2021_file/himitsu-no-nimu/README.md) | General skill| `ISPCLUB{w3lc0me_t0_1nn3r_s4nCtuM}` |
  | [Start the new schoolyear]() | General skill |`ISPCLUB{L1nux_1z_v3ry_c0nV3n1EnT}` |
- | [Sasuke’s Paw Encyclopedia]() | General skill | `ISPCLUB{SO_WEIRD_CAT}` |
+ | [Sasuke’s Paw Encyclopedia](/miniCTF2021/miniCTF2021_file/sasuke_paw/README.md) | General skill | `ISPCLUB{SO_WEIRD_CAT}` |
  | [Faster!!!]() |Misc | `ISPCLUB{r1ck_r0ll_4g41n}`|
  | [First Generation]() | 	Misc | `ISPCLUB{CAPTURE_THE_FLAG}` |
  | [Kakuremino no Jutsu]() | Misc |`ISPCLUB{h1d3_f1l3_1n_p1ctur3}`|
- | [Honest or Tricky]() | Programming | `ISPCLUB{m4th_f0R_dUmm13S!!!!!!!}` |  
- | [Tricky or Honest]() | Programming | `ISPCLUB{F45T_a5_71ghtN1n9!!!!}` |
+ | [Honest or Tricky](/miniCTF2021/miniCTF2021_file/honest_or_tricky/README.md) | Programming | `ISPCLUB{m4th_f0R_dUmm13S!!!!!!!}` |  
+ | [Tricky or Honest](/miniCTF2021/miniCTF2021_file/tricky_or_honest/README.md) | Programming | `ISPCLUB{F45T_a5_71ghtN1n9!!!!}` |
  | [Reverse no Jutsu]() | RE |`ISPCLUB{s3xY_n0_jnt5u_K4i_h4r3m}` |
  | [Kakureru]() | RE |`ISPCLUB{W3ll_c0m3_t0_r3vers!n9}` |
  | [Furipputon - Reveal of the Truth](#) | RE  |`ISPCLUB{DekuHoho}`|
