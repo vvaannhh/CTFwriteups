@@ -1,7 +1,9 @@
+# Author
+Iluvinn
 # Overview
 Khi kết nối tới server ta sẽ được chơi 1 game mô phỏng cày cấp đánh boss và yêu cầu đó là tiêu diệt ma vương Iluvinn
 ```
-iluvinn in ~/miniCTF2021/chall4 λ nc localhost 10004
+iluvinn in ~/miniCTF2021 λ nc 150.230.217.225 10004
 *======================  WELCOME  ======================*
 * This world is dominated by Iluvinn aka Demon Lord     *
 * He had weird power called AMATERASU, it's a black fire*
