@@ -136,7 +136,7 @@ $======================  BOSS ROOM  ==================$
 | Iluvinn is using AMATERASU, pls RUN 
 $=====================================================$
 ```
-A: Ok giờ nó hơn 2 tỉ máu r đấy bro giờ sao nữa
+A: Ok giờ nó hơn 2 tỉ máu r đấy bro giờ sao nữa <br>
 B: Đánh tiếp! hồi máu cho nó tiếp!
 ```
 ======================== JUNGLE =======================
