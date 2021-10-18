@@ -25,7 +25,7 @@
  | [Faster!!!]() |Misc | `ISPCLUB{r1ck_r0ll_4g41n}`|
  | [First Generation]() | 	Misc | `ISPCLUB{CAPTURE_THE_FLAG}` |
  | [Kakuremino no Jutsu]() | Misc |`ISPCLUB{h1d3_f1l3_1n_p1ctur3}`|
- | [Honest or Tricky](/miniCTF2021/miniCTF2021_file/honest_or_tricky/README.md) | Programming | `ISPCLUB{m4th_f0R_dUmm13S!!!!!!!}` |  
+ | [Honest or Tricky](/miniCTF2021/miniCTF2021_file/tricky_or_honest/README.md) | Programming | `ISPCLUB{m4th_f0R_dUmm13S!!!!!!!}` |  
  | [Tricky or Honest](/miniCTF2021/miniCTF2021_file/tricky_or_honest/README.md) | Programming | `ISPCLUB{F45T_a5_71ghtN1n9!!!!}` |
  | [Reverse no Jutsu]() | RE |`ISPCLUB{s3xY_n0_jnt5u_K4i_h4r3m}` |
  | [Kakureru]() | RE |`ISPCLUB{W3ll_c0m3_t0_r3vers!n9}` |
