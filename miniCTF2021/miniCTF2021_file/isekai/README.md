@@ -1,5 +1,4 @@
-# Author
-Iluvinn
+# Author: Iluvinn
 # Overview
 Khi kết nối tới server ta sẽ được chơi 1 game mô phỏng cày cấp đánh boss và yêu cầu đó là tiêu diệt ma vương Iluvinn
 ```
