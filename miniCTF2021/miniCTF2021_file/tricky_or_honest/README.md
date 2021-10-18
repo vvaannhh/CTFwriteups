@@ -1,3 +1,4 @@
+# Author: Iluvinn
 # Overview
 Tricky or honest và Honest or tricky là 2 bài từ cùng 1 mã nguồn nên cách giải sẽ y hệt nhau <br>
 Khi kết nối đến server thì ta nhận được 
