@@ -21,7 +21,7 @@
  | [Earth Hour]() | General skill| `ISPCLUB{OUREARTH}` |
  | [Himitsu No Ninmu](/miniCTF2021/miniCTF2021_file/himitsu-no-nimu/README.md) | General skill| `ISPCLUB{w3lc0me_t0_1nn3r_s4nCtuM}` |
  | [Start the new schoolyear]() | General skill |`ISPCLUB{L1nux_1z_v3ry_c0nV3n1EnT}` |
- | [Sasuke’s Paw Encyclopedia](/miniCTF2021/miniCTF2021_file/sasuke_paw/README.md) | General skill | `ISPCLUB{SO_WEIRD_CAT}` |
+ | [Sasuke’s Paw Encyclopedia](/miniCTF2021/miniCTF2021_file/sasuke_paw/README.MD) | General skill | `ISPCLUB{SO_WEIRD_CAT}` |
  | [Faster!!!]() |Misc | `ISPCLUB{r1ck_r0ll_4g41n}`|
  | [First Generation]() | 	Misc | `ISPCLUB{CAPTURE_THE_FLAG}` |
  | [Kakuremino no Jutsu]() | Misc |`ISPCLUB{h1d3_f1l3_1n_p1ctur3}`|
