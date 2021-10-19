@@ -1,6 +1,6 @@
 # Welcome: Discord
 
-# Challenge
+#### Challenge
 Hành trình thu thập vô cùng nguy hiểm và khó lường. Hãy để gia tộc ISP giúp đỡ các bạn:
 https://discord.gg/B7xFmWXp5F
 
