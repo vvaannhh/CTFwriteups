@@ -294,12 +294,12 @@ Khi mở bức ảnh ta thấy bức ảnh đã bị xoáy khiến ta không th�
 
 Flag: ```ISPCLUB{m4q3ky0u_sk4rjnq4n}```
 
-# Baika - Forensic
+# Forensic: Baika 
 #### Description
  Jicho - một người trong nhóm bạn của bạn, là 1 thành viên thuộc tộc Akimochi của PTITgakure. Jicho nói rằng người trong tộc Akimochi chỉ có thể sử dụng được thuật thay đổi kích thước cơ thể. Liệu có bí thuật nào có thể tháy đổi kích thước vật thể không ?
 
  [Baika](/miniCTF2021/miniCTF2021_file/Baika/img/2.png)
-## Solution
+#### Solution
 - Đề cho một hình ảnh:                                        
 ![](/miniCTF2021/miniCTF2021_file/Baika/img/4.png)
 - Và dĩ nhiên flag hiện ra ngay trong ảnh là flag fake.
@@ -310,4 +310,38 @@ Flag: ```ISPCLUB{m4q3ky0u_sk4rjnq4n}```
 ![](/miniCTF2021/miniCTF2021_file/Baika/img/3.png)
 - Flag: ``` ISPCLUB{ch0_b41k4_n0_jut5u} ```
 
+# General skill: Chess but not so Stress 
+
+#### Description
+
+Trong cuộc Đại chiến Ninja Lần thứ 4, Deku Haha đang trên đường làm nhiệm vụ tình báo thì gặp phải Nara Shikashisa, một nhẫn giả với IQ 5 chữ số được Orochimacho dùng "Thố Uể Chuyển Sinh" để hồi sinh nhằm chặn đường các nhẫn giả tình báo. Deku Haha phải giải câu đố sau đây của Shikashisa để tiếp tục nhiệm vụ. Đây là 1 bàn cờ vua khá lạ, Shikashisa muốn bạn sắp xếp lại các quân cờ theo 1 thứ tự "giá trị" nào đó và tìm thông điệp ẩn trong các quân cờ (nội dung flag) đó. Bạn có thể muốn đọc lại luật cờ vua cơ bản 1 chút đó :)  
+![chess_but_no_stress.png](https://i.imgur.com/PY3MNzU.png)
+
+#### Solution
+
+:> Bài này thực ra không stress lắm đâu :>
+![image](https://user-images.githubusercontent.com/72268643/137691220-2897f786-86fc-46a7-8390-76ecfc63efbf.png)
+
+Để làm được bài này bạn chỉ cần nắm chắc được cái điều sau của luật cơ bản:
+  + Trắng đi trước đen đi sau.
+  + Giá trị 'sức mạnh' của các quân cờ.
+![image](https://user-images.githubusercontent.com/72268643/137682677-345b2f5b-1194-478b-9c7b-3b8ec699a264.png)
+
+Qua những manh mối đó, vì Tượng và Mã có giá trị cùng bằng 3 ta có thể sắp xếp các quân cờ theo 2 trường hợp: 
+
+![image](https://user-images.githubusercontent.com/72268643/137687991-37cd75a4-a47b-4382-aec6-b9822748159d.png)
+
+-> Tương ứng với 71 52 77 66 49 84 95 81 85 51 69 78
+
+HOẶC 
+
+![image](https://user-images.githubusercontent.com/72268643/137689551-0a5c71d5-7677-4fab-b429-f2fc78587d87.png)
+
+-> Tương ứng với 71 52 49 84 77 66 95 81 85 51 69 78
+
+Khi đã làm đến bước này thì các bạn chưa biết có thể xem hint hoặc là nhận ra được rằng đây là hệ cơ số 10. 
+Sau khi chuyển sang ASCII đoạn nội dung trên, ta được: 
+![image](https://user-images.githubusercontent.com/72268643/137690385-0890c9bc-bf5c-4581-8ff0-8fa2ed965e31.png)
+
+Đây sẽ là flag đúng của chúng ta: `ISPCLUB{G4MB1T_QU3EN}` (và tất nhiên flag thứ 2 kia là flag đểu rồi :> )
 
