@@ -295,7 +295,7 @@ Khi mở bức ảnh ta thấy bức ảnh đã bị xoáy khiến ta không th�
 Flag: ```ISPCLUB{m4q3ky0u_sk4rjnq4n}```
 
 # Forensic: Baika 
-#### Description
+#### Challenge
  Jicho - một người trong nhóm bạn của bạn, là 1 thành viên thuộc tộc Akimochi của PTITgakure. Jicho nói rằng người trong tộc Akimochi chỉ có thể sử dụng được thuật thay đổi kích thước cơ thể. Liệu có bí thuật nào có thể tháy đổi kích thước vật thể không ?
 
  [Baika](/miniCTF2021/miniCTF2021_file/Baika/img/2.png)
@@ -312,7 +312,7 @@ Flag: ```ISPCLUB{m4q3ky0u_sk4rjnq4n}```
 
 # General skill: Chess but not so Stress 
 
-#### Description
+#### Challenge
 
 Trong cuộc Đại chiến Ninja Lần thứ 4, Deku Haha đang trên đường làm nhiệm vụ tình báo thì gặp phải Nara Shikashisa, một nhẫn giả với IQ 5 chữ số được Orochimacho dùng "Thố Uể Chuyển Sinh" để hồi sinh nhằm chặn đường các nhẫn giả tình báo. Deku Haha phải giải câu đố sau đây của Shikashisa để tiếp tục nhiệm vụ. Đây là 1 bàn cờ vua khá lạ, Shikashisa muốn bạn sắp xếp lại các quân cờ theo 1 thứ tự "giá trị" nào đó và tìm thông điệp ẩn trong các quân cờ (nội dung flag) đó. Bạn có thể muốn đọc lại luật cờ vua cơ bản 1 chút đó :)  
 ![chess_but_no_stress.png](https://i.imgur.com/PY3MNzU.png)
@@ -344,4 +344,32 @@ Sau khi chuyển sang ASCII đoạn nội dung trên, ta được:
 ![image](https://user-images.githubusercontent.com/72268643/137690385-0890c9bc-bf5c-4581-8ff0-8fa2ed965e31.png)
 
 Đây sẽ là flag đúng của chúng ta: `ISPCLUB{G4MB1T_QU3EN}` (và tất nhiên flag thứ 2 kia là flag đểu rồi :> )
+
+# General skill: Earth Our
+
+#### Challenge
+
+Hôm nay là ngày Trái Đất! ISP Ichizoku đại diện cho PTITgakure soạn thư gửi tới rất nhiều các quốc gia khác trên Thế giới. Trong thư không chỉ nói lên thông điệp của các nhẫn giả PTITgakure mà còn bao gồm các quốc gia nhận được thư. Hãy xem xem bạn có hiểu được thông điệp của bức thư không nhé!
+
+[messenger.txt](/miniCTF2021/miniCTF2021_file/Messenger.txt)
+
+#### Solution
+
+Khi tải file dưới đề bài ta được đoạn text sau:
+
+`(41.406261, 13.670415) (5.202168, 46.911497) (-20.857119, -59.43613) (2.220493, -72.971320) (20.002158, 103.556915) (47.936819, 33.839043) (-15.149072, -56.503890) { (18.942883, 55.166555) (43.806953, 57.451712) (47.104862, 25.283979) (12.818703, 38.467574) (23.328579, 4.541791) (44.532888, 23.701948) (14.696728, 101.397263) (47.144076, 17.283236) }`
+Nhìn đoạn text là ta đã nhận ra ngay các cặp số chính là tọa độ của 1 địa chỉ nào đó.
+Thử tra cặp số đầu tiên xem ta được gì nào: 
+
+![](https://i.imgur.com/DEc9gZp_d.webp?maxwidth=1520&fidelity=grand)
+Để ý đọc lại đề bài ta sẽ nghĩ ngay đến những điểm đáng chú ý như thư gửi tới rất nhiều các **quốc gia**... bao gồm các **quốc gia**...
+
+Note tên các quốc gia của các địa điểm đó lại ta được:
+
+![](https://i.imgur.com/pbEUKTV.png)
+
+Vì form flag là ISPClUB{} nên để ý các chữ cái trước dấu "{" ta sẽ thấy đó chính là chữ cái bắt đầu của tên các quốc gia đó.
+Vậy là ta đã ra flag rồi. Yeah!!!
+
+Flag: ``` ISPCLUB{OUREARTH} ```
 
