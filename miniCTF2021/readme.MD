@@ -276,5 +276,5 @@ Bài này khi giải nén tệp Maze_runner.rar ta được một list các
 
  ![](/miniCTF2021/miniCTF2021_file/Sagasu%20no%20Jutsu/2.png)
 
-
+Flag: `ISPCLUB{5uck_4_l0n9_w4y}`  
 
