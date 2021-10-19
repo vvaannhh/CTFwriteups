@@ -53,7 +53,7 @@ Flag: ISPCLUB{4r3_y0u_r34dy}
 #### Challenge
 Bạn sắp đặt chân vào thế giới mới. Hãy khám phá nó ...
 
-[Donyu.txt](miniCTF2021/miniCTF2021_file/Donyu/Donyu.txt)
+[Donyu.txt](miniCTF2021_file/Donyu/Donyu.txt)
 
 #### Solution
 
