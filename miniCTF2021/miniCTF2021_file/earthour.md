@@ -13,7 +13,7 @@ Thử tra cặp số đầu tiên xem ta được gì nào:
 
 Note tên các quốc gia của các địa điểm đó lại ta được:
 
-<img src="https://imgur.com/pbEUKTV">
+![](https://i.imgur.com/pbEUKTV.png)
 
 Vì form flag là ISPClUB{} nên để ý các chữ cái trước dấu "{" ta sẽ thấy đó chính là chữ cái bắt đầu của tên các quốc gia đó.
 Vậy là ta đã ra flag rồi. Yeah!!!
