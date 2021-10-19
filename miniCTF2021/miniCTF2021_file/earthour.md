@@ -8,7 +8,7 @@ Khi tải file dưới đề bài ta được đoạn text sau:
 Nhìn đoạn text là ta đã nhận ra ngay các cặp số chính là tọa độ của 1 địa chỉ nào đó.
 Thử tra cặp số đầu tiên xem ta được gì nào: 
 
-![](https://imgur.com/DEc9gZp)
+![](https://i.imgur.com/DEc9gZp_d.webp?maxwidth=1520&fidelity=grand)
 Để ý đọc lại đề bài ta sẽ nghĩ ngay đến những điểm đáng chú ý như thư gửi tới rất nhiều các **quốc gia**... bao gồm các **quốc gia**...
 
 Note tên các quốc gia của các địa điểm đó lại ta được:
