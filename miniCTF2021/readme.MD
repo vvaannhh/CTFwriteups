@@ -47,7 +47,7 @@ https://discord.gg/B7xFmWXp5F
 #### Solution
 Ở bài này mình có thể tìm thấy flag trong channels Rules của server discord [miniCTF2021](https://discord.gg/B7xFmWXp5F)
 
-Flag: ISPCLUB{4r3_y0u_r34dy}
+Flag: ``` ISPCLUB{4r3_y0u_r34dy} ```
 
 # Welcome Dōnyū
 #### Challenge
@@ -65,7 +65,7 @@ Tổ chức AkatXienPan được thành lập với mục đích thu thập lạ
 Chính vì thế hãy luyện tập, level up kĩ năng, dấn thân đi khám phá các mê cung để thu thập lại các bí thuật trước khi Hiruyzawa Kuhan có được nó để đem lại bình yên cho làng PTIT cũng như gìn giữ hòa bình nơi Nhẫn giới nào!!!
 ISP Ichizoku đã chuẩn bị một món quà nho nhỏ tặng bạn. Hãy thử làm quen với nó trước khi tham gia thu thập các bí thuật: ISPCLUB{900D_LUCK_B4BY}.
 ```
-Flag: ISPCLUB{900D_LUCK_B4BY}
+Flag: ``` ISPCLUB{900D_LUCK_B4BY} ```
 
 # Crypto: Chuunin Exam
 #### Challenge
