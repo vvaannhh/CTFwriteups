@@ -209,5 +209,22 @@ SVNQQ0xVQns623473335f31735f6e30745fORVTI5C7MQYWMZRRMN2WY5D5
 
 Flag: ```ISPCLUB{b4s3_1s_n0t_tk4t_d1ff1cult} ```
 
+# Crypto: Gravity Falls Bill
+
+#### Challenge
+
+Đã nhiều lần ăn Ramen tại tiệm Ramen thương hiệu ISP Ichizoku, Deku Haha và bạn đến hôm nay mới để ý thấy rằng trong những tờ hóa đơn thanh toán của tiệm đều có những ký hiệu kỳ lạ. Nghe đồn đây là ấn chú mà chủ tiệm đã khắc lên để nhận biết xem tờ hóa đơn có bị sửa đổi không. Deku Haha thầm nghĩ nếu sắp tới xin gia nhập ISP Ichizoku mà biết được nó và cho vào CV thì rất có ích. Hãy giải mã nó cùng Deku Haha để làm đẹp CV sắp tới của mình nhé!!!
+
+[encrypt.png](/miniCTF2021/miniCTF2021_file/Bill_cipher/encrypt.png)
+
+#### Solution
+
+Khi mở file ảnh mà đề cho, kết hợp với đoạn mô tả và tên của challenge. Ta có thể đoán được đây là mật mã bill cipher. Ở đây mình sẽ sử dụng tool [dcode.fr](https://www.dcode.fr/gravity-falls-bill-cipher) để có thể giải đoạn mã này.
+
+![](/miniCTF2021/miniCTF2021_file/Bill_cipher/1.png)
+
+Thêm các kí tự để đúng với đoạn mã đề cho và flag form. Ta được flag: ISPCLUB{BJLL_CJPKER}
+
+Flag: ``` ISPCLUB{BJLL_CJPKER} ```
 
 
