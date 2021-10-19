@@ -4,9 +4,8 @@ Bạn sắp đặt chân vào thế giới mới. Hãy khám phá nó ...
 
 [Donyu.txt](/Donyu.txt)
 
-####
+#### Solution
 
-Solution
 Đọc đoạn text mà đề cho ta dễ dàng thấy được flag nằm ở cuối file.
 ```
 Làng PTIT (PTITgakure)  từ lâu đã nổi tiếng với các thuật Phong Ấn do gia tộc ISP (ISP Ichizoku)  thực hiện.
