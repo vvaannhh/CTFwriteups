@@ -188,17 +188,23 @@ Một bí thuật cơ sở bị trộn lẫn bởi Base Ichizoku để che giấ
 
 Đây là các base (là các hệ cơ số được dùng cho máy tính và mã hóa)
 Ví dụ:  Base10 (DEC): 0,1,2,3,4,5,6,7,8,9
+
 	Base2 (BIN): 0,1
+	
 	Base8 (OCT): 0, 1, 2, 3, 4, 5, 6, 7
+	
 Và 1 số base khác: Base16, base32, base64….
 
 Sau khi mở file txt, đoạn mã được encrypt: 
+
 ```
 SVNQQ0xVQns623473335f31735f6e30745fORVTI5C7MQYWMZRRMN2WY5D5
 ```
 
 Đoạn mã “SVNQQ0xVQns” là base 64, decrypt ra: ISPCLUB{
+
 Đoạn mã “623473335f31735f6e30745f” là base 16, decrypt ra: b4s3_1s_n0t_
+
 Đoạn mã “ORVTI5C7MQYWMZRRMN2WY5D5” là base 32, decrypt ra: tk4t_d1ff1cult}
 
 Flag: ```ISPCLUB{b4s3_1s_n0t_tk4t_d1ff1cult} ```
