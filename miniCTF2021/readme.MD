@@ -181,7 +181,9 @@ Flag: ``` ISPCLUB{s3cr3t_pr0t3ct0r} ```
 #### Challenge
 
 Một bí thuật cơ sở bị trộn lẫn bởi Base Ichizoku để che giấu sự nhòm ngó của AkatXienPan!!! 
+
 [Base_no_jutsu.txt](/miniCTF2021/miniCTF2021_file/Base/Baka_no_Jutsu.txt)
+
 ####  Solution
 
 Đây là các base (là các hệ cơ số được dùng cho máy tính và mã hóa)
