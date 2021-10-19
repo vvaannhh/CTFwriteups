@@ -240,8 +240,8 @@ Với cuốn bí thuật ăn cắp được từ Aburame Ichizoku, Hiruyzawa Kuh
 ![](https://i.imgur.com/hlyVWxL.png)  
 Flag: ``` ISPCLUB{11919} ```
 
-# Daichidoukaku - Forensic
-#### Description
+# Forensic: Daichidoukaku 
+#### Challenge
  Tam Vĩ đang nổi điên. Chắc chắn là do Hiruyzawa Kuhan đã cho nó say thuốc. Trong lúc đợi các y nhẫn giả đến và chữa trị cho nó, bạn và hàng trăm genin gần đó có nhiệm vụ cùng nhau thi triển 1 nhẫn thuật để mặt đất rung chuyển và tách ra nhằm làm kìm chân Tam Vĩ, không để nó tiến vào trong làng.
  
 [Supuritto_no_Jutsu](img/Supuritto_no_Jutsu.gif)
@@ -254,7 +254,27 @@ Flag: ``` ISPCLUB{11919} ```
 - Quét mã QR nhận được flag
 - Flag: ``` ISPCLUB{5p1it_91f} ```
 
+# Forensic: Sagasu no Jutsu
 
+#### Challenge
+
+Vẫn chứng nào tật nấy, Deku Haha chưa thể sửa được tính vụng về và thói quen để đồ đạc lộn xộn của mình. Lại 1 lần nữa cậu ta để chung nhẫn cụ triệu hồi với cuốn bí thuật trong túi của mình. Và lại 1 lần nữa cậu ta vô tình kích hoạt nhẫn cụ đó, cả 1 đống cuốn trục trông chả khác gì cuốn bí thuật lại hiện ra. Dù rất là phiền phức nhưng bạn hãy một lần nữa giúp cậu ta nhé!!!
+
+[Sagasu no Jutsu](https://bit.ly/3AWwaCT)
+
+#### Solution
+
+Bài này khi giải nén tệp Maze_runner.rar ta được một list các folder và file nhỏ. Flag là một chuỗi ký tự vậy nên ta có thể thử dùng chức năng Search ở File Explorer để tìm toàn bộ file .txt `*.txt` cũng sẽ ra một vài file .txt và mở lần lượt sẽ thấy được flag.  
+Đối với bài này thì phương pháp làm tay là 1 phương pháp không hiệu quả nếu phải tìm với số lượng lớn. Chúng ta sẽ dùng **CLI** (Command Line Interface) với các câu lệnh `findstr` hoặc `grep`. Về cơ bản thì mục đích sử dụng của 2 câu lệnh này là như nhau, dùng để tìm kiếm thông tin bên trong 1 file.  
+Đầu tiên ta sẽ mở CLI tại thư mục cần tìm kiếm (cmd đối với windows và Terminal đối với Linux) sau đó dùng 1 trong 2 câu lệnh để tìm kiếm.
+
+`findstr` đối với Windows: 
+
+ ![](/miniCTF2021/miniCTF2021_file/Sagasu%20no%20Jutsu/1.png)
+ 
+ `grep` đối với Linux
+
+ ![](/miniCTF2021/miniCTF2021_file/Sagasu%20no%20Jutsu/2.png)
 
 
 
