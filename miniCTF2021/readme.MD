@@ -278,3 +278,18 @@ Bài này khi giải nén tệp Maze_runner.rar ta được một list các
 
 Flag: `ISPCLUB{5uck_4_l0n9_w4y}`  
 
+# Forensic: Rasen...Deku
+
+#### Challenge
+
+Trong gia tộc của Deku có 1 bức tranh nổi tiếng bền nhất trong PTITgakure, rơi bao nhiêu lần không vỡ. Deku Haha đã sử dụng bức tranh làm bia đỡ khi luyện tập và chắc cũng muốn kiểm tra độ bền của nó. Vì dùng Rasengan hơi mạnh nên bức tranh đã bị thành ra như này. Hãy giúp Deku Haha khôi phục nguyên vẹn bức tranh nhé!!!
+
+[Rasen...Deku](/miniCTF2021/miniCTF2021_file/Rasen/Deku_cukcuk.png)
+
+#### Solution
+
+Khi mở bức ảnh ta thấy bức ảnh đã bị xoáy khiến ta không thể đọc được nội dung trên bức ảnh. Ta chỉ cần xoáy bức ảnh lại để có thể đọc được flag. Ở đây mình dùng tool là (Photopea)[https://www.photopea.com/]. 
+
+![](/miniCTF2021/miniCTF2021_file/Rasen/1.png)
+
+Flag: ```ISPCLUB{m4q3ky0u_sk4rjnq4n}```
