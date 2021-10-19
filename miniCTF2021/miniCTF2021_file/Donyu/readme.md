@@ -2,7 +2,7 @@
 #### Challenge
 Bạn sắp đặt chân vào thế giới mới. Hãy khám phá nó ...
 
-[Donyu.txt](/Donyu.txt)
+[Donyu.txt](Donyu.txt)
 
 #### Solution
 
