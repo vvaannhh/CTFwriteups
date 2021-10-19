@@ -7,4 +7,4 @@ https://discord.gg/B7xFmWXp5F
 Solution
 Ở bài này mình có thể tìm thấy flag trong channels Rules của server discord [miniCTF2021](https://discord.gg/B7xFmWXp5F)
 
-Flag: CTF{Remember_2_read_the_rules!!!}
+Flag: ISPCLUB{4r3_y0u_r34dy}
