@@ -288,7 +288,7 @@ Trong gia tộc của Deku có 1 bức tranh nổi tiếng bền nhất trong PT
 
 #### Solution
 
-Khi mở bức ảnh ta thấy bức ảnh đã bị xoáy khiến ta không thể đọc được nội dung trên bức ảnh. Ta chỉ cần xoáy bức ảnh lại để có thể đọc được flag. Ở đây mình dùng tool là (Photopea)[https://www.photopea.com/]. 
+Khi mở bức ảnh ta thấy bức ảnh đã bị xoáy khiến ta không thể đọc được nội dung trên bức ảnh. Ta chỉ cần xoáy bức ảnh lại để có thể đọc được flag. Ở đây mình dùng tool là [Photopea](https://www.photopea.com/). 
 
 ![](/miniCTF2021/miniCTF2021_file/Rasen/1.png)
 
