@@ -460,5 +460,35 @@ Bạn nhận được một nhiệm vụ tuyệt mật từ PTITgakuge: liên l�
 ![](img/21.png)
 ![](img/22.png)
 - Flag: ``` ISPCLUB{w3lc0me_t0_1nn3r_s4nCtuM} ```
+- 
+# General Skill: Start the new schoolyear 
 
+#### Challenge
 
+Một bài test nhanh cho các Genin!!
+
+[exam](/miniCTF2021/miniCTF2021_file/exam.rar)
+
+#### Solution
+
+Sau khi mở file exam.rar sẽ nhận được 3 file rar và 1 file txt. 
+
+File txt với nội dung:
+
+flag1: Câu lệnh bắt buộc khi ta thực hiện các tác vụ cần quyền root hay superuser.
+
+flag2: Câu lệnh được sử dụng để xem toàn bộ nội dung file trong cửa sổ dòng lệnh Linux.
+
+flag3: Câu lệnh được sử dụng để liệt kê tất cả tệp tin bao gồm cả tệp tin ẩn trong Linux
+
+Sau khi đọc, ta thấy mỗi dữ kiện ứng với mật khẩu của từng file rar:
+
+>Với flag1: Câu lệnh cấp quyền root hay superuser là: sudo
+
+>Với flag2: câu lệnh xem toàn bộ nội dung file trong cửa sổ dòng lệnh (Terminal): cat
+
+>Với flag3: câu lệnh liệt kê tất cả tập tin bao gồm cả tập tin ẩn: ls -a
+
+Sau khi nhập đúng password ta nhận được 3 mảnh ghép và ghép lại ra flag
+
+Flag: ```ISPCLUB{L1nux_1z_v3ry_c0nV3n1EnT}```
