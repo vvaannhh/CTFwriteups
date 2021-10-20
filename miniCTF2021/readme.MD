@@ -1492,7 +1492,7 @@ Shop: http://104.248.144.252:5002/
 
 Send payload to admin: http://104.248.144.252:5002/admin
 
-# Solution
+#### Solution
 ![](https://i.imgur.com/JhUUCKu.png)
 
 Bài này thì chắc là XSS thật rùi
