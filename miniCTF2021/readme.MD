@@ -1472,7 +1472,7 @@ Mình đoán là sẽ bypass vượt thời gian bằng cách cho cái timestamp
 
 Ví dụ như 0 😎
 
-Mình dùng burpsuite của intercept để change response
+Mình dùng intercept của burpsuite để change response
 
 ![](https://i.imgur.com/gFrtARW.png)
 
