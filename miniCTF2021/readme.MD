@@ -31,12 +31,12 @@
  | [Kakureru]() | RE |`ISPCLUB{W3ll_c0m3_t0_r3vers!n9}` |
  | [Furipputon - Reveal of the Truth](/miniCTF2021/miniCTF2021_file/Furipputon.md) | RE  |`ISPCLUB{DekuHoho}`|
  | [Isekai with truck-kun](/miniCTF2021/miniCTF2021_file/isekai/README.md) | Warm up |`ISPCLUB{p0w3R_oF_l0V3!!!}`|
- | [PHP no jutsu]() | Web | `ISPCLUB{php_1s_Suck}`|
- | [Deku's Bird]()  | Web | `ISPCLUB{4_G00D_PL4Y3R}`|
- | [Kieru Odama Genso]() | Web | `ISPCLUB{c$$_!5_v3ry_34sy}`|
- | [Beginner]() | Web | `ISPCLUB{Not_the_first_time_huhh??}`|
- | [ISP Ichizoku SHOP]() | Web | `ISPCLUB{dung_gian_lan}`|
- | [Shinra Tensei]() | Web | `ISPCLUB{__H0W_TH3__F^CK_D1D__Y0U_93t__F14G_????}`|
+ | [PHP no jutsu](#web-PHP no jutsu) | Web | `ISPCLUB{php_1s_Suck}`|
+ | [Deku's Bird](#web-Deku's-Bird)  | Web | `ISPCLUB{4_G00D_PL4Y3R}`|
+ | [Kieru Odama Genso](#web-kieru-odama-genso) | Web | `ISPCLUB{c$$_!5_v3ry_34sy}`|
+ | [Beginner](#web-Beginner) | Web | `ISPCLUB{Not_the_first_time_huhh??}`|
+ | [ISP Ichizoku SHOP](#web-ISP-Ichizoku-SHOP) | Web | `ISPCLUB{dung_gian_lan}`|
+ | [Shinra Tensei](#web-Shinra-Tensei) | Web | `ISPCLUB{__H0W_TH3__F^CK_D1D__Y0U_93t__F14G_????}`|
  
  # Welcome: Discord
 
