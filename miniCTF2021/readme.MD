@@ -709,4 +709,116 @@ $
 
 Flag: ``` ISPCLUB{F45T_a5_71ghtN1n9!!!!} ```
 
+# RE: Reverse no Jutsu
 
+#### Challenge
+
+Có vẻ Deku Haha đã ăn cắp được một mảnh giấy cấm thuật. Nhưng vì quá ảo ma canada nên trong lúc luyện tập phong độn hắn lỡ cắt mảnh giấy thành nhiều phần và bị thổi bay đi. Bây giờ hắn đang khóc lóc và cầu xin bạn giúp tìm từng mảnh để ghép chúng lại. Hắn ta hứa sẽ trả công bạn hậu hĩnh. Bạn có sẵn lòng giúp hắn ko? ( Việc nhẹ lương cao tại sao không làm)
+
+[Reverse no Jutsu](/miniCTF2021/miniCTF2021_file/R3v3rs3_no_jnt5u.cpp)
+
+#### Solution
+
+Đề cho ta một đoạn code C++ như sau:
+```C++
+#include<bits/stdc++.h>
+#include<windows.h>
+using namespace std;
+
+int check(string ninjutsu){
+			if( ninjutsu.length()==32 &&
+                ninjutsu[0x1c]         == 'r' &&
+                ninjutsu[18/9]         == 'P' &&
+                ninjutsu[14]           == '0' &&
+                ninjutsu[21+2*10+2-22] == '_' &&
+                ninjutsu[3]  		   == 'C' &&
+                ninjutsu[24]           == 'i' &&
+                ninjutsu[18/6*10]      == 'm' &&
+                ninjutsu[6]            == 'B' &&
+                ninjutsu[9]            == '3' &&
+                ninjutsu[10]    	   == 'x' &&
+                ninjutsu[12]           == '_' &&
+                ninjutsu[5]            == 'U' &&
+                ninjutsu[16]           == 'j' &&
+                ninjutsu[23]           == '4' &&
+                ninjutsu[17]           == 'n' &&
+                ninjutsu[4]            == 'L' &&
+                ninjutsu[18+9-2+2-9]   == 't' &&
+                ninjutsu[20]           == 'u' &&
+                ninjutsu[0]            == 'I' &&
+                ninjutsu[22]           == 'K' &&
+                ninjutsu[7]            == '{' &&
+                ninjutsu[11]           == 'Y' &&
+                ninjutsu[0x1b]         == '4' &&
+                ninjutsu[13]           == 'n' &&
+                ninjutsu[5*5]          == '_' &&
+                ninjutsu[8]            == 's' &&
+                ninjutsu[26]           == 'h' &&
+                ninjutsu[1]            == 'S' &&
+                ninjutsu[29]           == '3' &&
+                ninjutsu[15]           == '_' &&
+                ninjutsu[21*2-23]      == '5' &&
+                ninjutsu[31]           == '}') 
+	return 1;
+    return 0;
+}
+
+int main(){
+	cout <<"Ban da tim thay nhung gi Deku Haha can chu\n\n\n";
+	string ninjutsu;
+	getline(cin,ninjutsu);
+	system("cls");
+	if(check(ninjutsu)) cout << "\n\n\n								Deku Haha chac chan se rat cam kich truoc tam long hao hiep cua ban giup han tim duoc cam thuat >>_<<";
+	else cout << "\n\n\n								Deku Haha guc nga khi biet do khong phai thu han can ~..~"; 
+}
+```
+
+Quan sát kĩ ta sẽ thấy thứ tự các kí tự của flag bị tráo đổi nên ta cần sắp xếp lại. Để làm việc này thì mình có code đoạn code C++ để sắp xếp lại cho mình.
+
+``` C++
+#include<bits/stdc++.h>
+#include<windows.h>
+using namespace std;
+int main(){
+    string ninjutsu="";
+    for (int i = 0; i < 32; i++)
+        ninjutsu += ' ';
+    ninjutsu[0x1c]         = 'r' ;
+    ninjutsu[18/9]         = 'P' ;
+	ninjutsu[14]           = '0' ;
+    ninjutsu[21+2*10+2-22] = '_' ;
+    ninjutsu[3]  		   = 'C' ;
+    ninjutsu[24]           = 'i' ;
+    ninjutsu[18/6*10]      = 'm' ;
+    ninjutsu[6]            = 'B' ;
+    ninjutsu[9]            = '3' ;
+    ninjutsu[10]    	   = 'x' ;
+    ninjutsu[12]           = '_' ;
+    ninjutsu[5]            = 'U' ;
+    ninjutsu[16]           = 'j' ;
+    ninjutsu[23]           = '4' ;
+    ninjutsu[17]           = 'n' ;
+    ninjutsu[4]            = 'L' ;
+    ninjutsu[18+9-2+2-9]   = 't' ;
+    ninjutsu[20]           = 'u' ;
+    ninjutsu[0]            = 'I' ;
+    ninjutsu[22]           = 'K' ;
+    ninjutsu[7]            = '{' ;
+    ninjutsu[11]           = 'Y' ;
+    ninjutsu[0x1b]         = '4' ;
+    ninjutsu[13]           = 'n' ;
+    ninjutsu[5*5]          = '_' ;
+    ninjutsu[8]            = 's' ;
+    ninjutsu[26]           = 'h' ;
+    ninjutsu[1]            = 'S' ;
+    ninjutsu[29]           = '3' ;
+    ninjutsu[15]           = '_' ;
+    ninjutsu[21*2-23]      = '5' ;
+    ninjutsu[31]           = '}' ;
+
+	cout<<ninjutsu;
+}
+```
+Sau khi chạy code thì ta ra được flag: ISPCLUB{s3xY_n0_jnt5u_K4i_h4r3m}
+
+Flag: ```ISPCLUB{s3xY_n0_jnt5u_K4i_h4r3m}```
