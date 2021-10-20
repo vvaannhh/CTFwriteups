@@ -1320,7 +1320,7 @@ B: Đánh tiếp! hồi máu cho nó tiếp!
 $======================  BOSS ROOM  ==================$
 | Dealing -99999448 damage to boss
 $=====================================================$
-You defeated the boss, here you flag: ISPCLUB{h34L_15_p0w3R}
+You defeated the boss, here you flag: ISPCLUB{p0w3R_oF_l0V3!!!}
 ```
 Đây là 1 lỗi được gọi là [`interger overflow`](https://en.wikipedia.org/wiki/Integer_overflow) đơn giản thì khi giá trị vượt quá ngưỡng giới hạn trên thì giá trị hiện tại sẽ trở về mốc giới hạn dưới
 
