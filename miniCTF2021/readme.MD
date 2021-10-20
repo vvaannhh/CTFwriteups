@@ -653,7 +653,7 @@ quest: 1
 
 Đối với honest or tricky sẽ là 15 câu hỏi trong 100s và tricky or honest là 100 câu hỏi trong 60s <br>
 Qua vài lần thử thì có thể thấy server chỉ yêu cầu các phép toán cộng, trừ, nhân, chia vậy nên phương pháp làm đơn giản sẽ là đọc dữ liệu trả về từ server sau đó thực hiện tính toán và gửi trả lại kết quả cho server
-```
+```python
 # Honest or tricky
 from pwn import *
 p = remote("134.209.97.157", 10001)
