@@ -1375,4 +1375,34 @@ if (isset($_GET["password"])) {
 }
 ```
 
-Đọc code thì ta thấy là trang web sẽ lấy password mà chúng ta nhập sau đó hash md5 và so sánh với password ban đầu nếu đúng thì sẽ in ra flag. Ở đây chúng ta sẽ tận dụng lỗi PHP type juggling. Lỗi này xảy ra do PHP hỗ trợ 2 phương thức so sánh bằng: so sánh tương đối (Loose comparisons) và so sánh tuyệt đối (Strict comparisons). Ở bài này chúng ta sẽ quan tâm đến so sánh tương đối được sử dụng với 2 dấu băng ``` == ```. Khi sử dụng phương thức này nếu như kiểu dữ liệu khác nhau nó sẽ đưa về một kiểu dữ liệu chung để thực hiện việc so sánh. strings bắt đầu với các ký tự là 0e, khi đó các chuỗi được chuyển thành các lũy thừa ví dự như 0e1234->0^{1234}
+Đọc code thì ta thấy là trang web sẽ lấy password mà chúng ta nhập sau đó hash md5 và so sánh với password ban đầu nếu đúng thì sẽ in ra flag. Ở đây chúng ta sẽ tận dụng lỗi PHP type juggling. Lỗi này xảy ra do PHP hỗ trợ 2 phương thức so sánh bằng: so sánh tương đối (Loose comparisons) và so sánh tuyệt đối (Strict comparisons). Ở bài này chúng ta sẽ quan tâm đến so sánh tương đối được sử dụng với 2 dấu băng ``` == ```. Khi sử dụng phương thức này nếu như kiểu dữ liệu khác nhau nó sẽ đưa về một kiểu dữ liệu chung để thực hiện việc so sánh. strings bắt đầu với các ký tự là 0e, khi đó các chuỗi được chuyển thành các lũy thừa ví dự như 0e1234->0^{1234} và 0 luỹ thừa bao nhiêu cũng bằng 0. Vậy ở đây ta sẽ tìm 1 chuỗi có dạng 0e(1 chuỗi số) và sau khi hash md5 ra chuỗi password ban đầu cũng có dạng đấy.
+
+Mình có tìm được 1 chuỗi như thế trong trên github: https://github.com/spaze/hashes/blob/master/md5.md. Nhập chuỗi 0e215962017 và lấy được flag.
+
+Flag: ```ISPCLUB{php_1s_Suck}```
+
+# WEB: Deku’s Bird
+
+#### Challenge
+
+Chú chim quý của nhà Deku được cái đẹp nhưng lại không có não. Nhiều lần nó xổng ra nhưng đều đâm đầu vào tường rồi lăn ra ngất. Hôm nay nó đã xổng lồng và bay vào 1 hang động đầy thạch nhũ. Deku Haha đã dùng Quang độn thắp sáng cả cái hang này, bạn hãy dùng thuật điều khiển bóng để điều khiển con chim bay qua 222 chướng ngại vật để ra ngoài 1 cách an toàn nhé!!! 
+
+http://134.209.97.157:5002/
+
+
+## Solution
+![](/miniCTF2021/miniCTF2021_file/bird/2.png)
+>Một game kiểu flappy bird khá là đơn giản, mục tiêu đã được nói rõ trong gợi ý là đạt 222 điểm.
+
+-Với mục tiêu như thế này, thì hoàn toàn có thể chơi như bình thường để đạt mục tiêu.
+
+-Tuy nhiên cách làm đó khá là hại chuột. Ở challenge này, sau khi hoàn thành thì điểm cao nhất sẽ được lưu lại.
+
+-Sau khi lục lọi một hồi ở phía browser thì mình thấy có 1 cookie dùng để lưu data về điểm cao nhất:
+![](/miniCTF2021/miniCTF2021_file/bird/3.png)
+
+-Bây giờ chỉ cần sửa  bestscore value thành giá trị lớn hơn 222 rồi reload lại là mình đã thấy flag.
+![](/miniCTF2021/miniCTF2021_file/bird/4.png)
+
+Flag:```ISPCLUB{4_G00D_PL4Y3R}```
+
