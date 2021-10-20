@@ -692,7 +692,7 @@ $
 ```
 
 <br>
-Flag: ```ISPCLUB{m4th_f0R_dUmm13S!!!!!!!}```
+Flag: ``` ISPCLUB{m4th_f0R_dUmm13S!!!!!!!} ```
 <br><br>
 
 Tricky or honest <br>
@@ -707,6 +707,6 @@ ISPCLUB{F45T_a5_71ghtN1n9!!!!}
 $  
 ```
 <br>
-Flag: ```ISPCLUB{F45T_a5_71ghtN1n9!!!!}```
+Flag: ``` ISPCLUB{F45T_a5_71ghtN1n9!!!!} ```
 
 
