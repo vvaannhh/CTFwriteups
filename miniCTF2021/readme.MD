@@ -1327,4 +1327,52 @@ You defeated the boss, here you flag: ISPCLUB{h34L_15_p0w3R}
 
 Flag: ```ISPCLUB{h34L_15_p0w3R}```
 
+# WEB: Beginneer
 
+#### Challenge 
+
+Một bài tập khởi động trước khi tham gia nhận nhiệm vụ ngày hôm nay!!!
+
+http://134.209.97.157:3202/
+
+#### Solution
+
+Khi vào trang web mà đề bài cho ta thấy một bức ảnh 
+
+![](/miniCTF2021/miniCTF2021_file/Begineer/1.png)
+
+Việc đầu tiên khi làm một bài web là chúng ta sẽ thử check source của trang web đấy. F12 lên và ta thấy được flag của bài này
+
+![](/miniCTF2021/miniCTF2021_file/Begineer/2.png)
+
+Flag: ```ISPCLUB{Not_the_first_time_huhh??}```
+
+# WEB: PHP no jutsu
+
+#### Challenge
+
+Deku Haha tìm được một chiếc rương có chứa cuốn trục về một loại nhẫn thuật mới nhưng không tài nào tìm được mật khẩu để mở được rương. Haha đã đến nhờ bạn tìm mật khẩu giúp. Bạn có thể tìm được mật khẩu của rương kho báu giúp Haha không?
+
+http://134.209.97.157:5003/
+
+#### Solution
+
+Khi vào trang web ta thấy có một ô để nhập mật khẩu
+
+![](/miniCTF2021/miniCTF2021_file/PHP/1.png)
+
+Việc đầu tiên là ta thử xem source của trang web này. Ta thấy có 1 file tên là [hint.txt](http://134.209.97.157:5003/hint.txt). Truy cập vào file ta thấy có một đoạn code PHP 
+
+```php
+<?php
+if (isset($_GET["password"])) {
+    if (hash("md5", $_GET["password"]) == $_GET["password"]) {
+       echo $flag;
+    }
+    else {
+        echo "Try again bro";
+    }
+}
+```
+
+Đọc code thì ta thấy là trang web sẽ lấy password mà chúng ta nhập sau đó hash md5 và so sánh với password ban đầu nếu đúng thì sẽ in ra flag. Ở đây chúng ta sẽ tận dụng lỗi PHP type juggling. Lỗi này xảy ra do PHP hỗ trợ 2 phương thức so sánh bằng: so sánh tương đối (Loose comparisons) và so sánh tuyệt đối (Strict comparisons). Ở bài này chúng ta sẽ quan tâm đến so sánh tương đối được sử dụng với 2 dấu băng ``` == ```. Khi sử dụng phương thức này nếu như kiểu dữ liệu khác nhau nó sẽ đưa về một kiểu dữ liệu chung để thực hiện việc so sánh. strings bắt đầu với các ký tự là 0e, khi đó các chuỗi được chuyển thành các lũy thừa ví dự như 0e1234->0^{1234}
