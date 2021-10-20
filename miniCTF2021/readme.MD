@@ -7,32 +7,32 @@
 ### Overview
  | Title | Category | Flag
  | ------ | ------  | ------ |
- | [Discord]() | Welcome |  `ISPCLUB {4r3_y0u_r34dy}` |
- | [Dōnyū]() | Welcome | `ISPCLUB{900D_LUCK_B4BY}` |
- | [Chuunin Exam](/miniCTF2021/miniCTF2021_file/Chuunin-Exam/Chuunin-Exam.md) |	Crypto	| `ISPCLUB{s3cr3t_pr0t3ct0r}` |
- | [Base no Jutsu]() | Crypto |  `ISPCLUB{b4s3_1s_n0t_tk4t_d1ff1cult}` |
- | [Gravity Falls Bill]() | Crypto |  `ISPCLUB{BJLL_CJPKER}` |
- | [Covi no Dokumushi]() | Forensic | `ISPCLUB{11919}` |
- | [Daichidoukaku]()| Forensic |  `ISPCLUB{5p1it_91f}` |
- | [Sagasu no Jutsu]() | Forensic |  `ISPCLUB{5uck_4_l0n9_w4y}` |
- | [Rasen...Deku]() | Forensic |`ISPCLUB{m4q3ky0u_sk4rjnq4n}` |
- | [Baika]() | Forensic |  `ISPCLUB{ch0_b41k4_n0_jut5u}` |
- | [Chess but not so Stress](#) |General skill|`ISPCLUB{G4MB1T_QU3EN}` |
- | [Earth Hour]() | General skill| `ISPCLUB{OUREARTH}` |
- | [Himitsu No Ninmu](/miniCTF2021/miniCTF2021_file/himitsu-no-nimu/README.md) | General skill| `ISPCLUB{w3lc0me_t0_1nn3r_s4nCtuM}` |
- | [Start the new schoolyear]() | General skill |`ISPCLUB{L1nux_1z_v3ry_c0nV3n1EnT}` |
- | [Sasuke’s Paw Encyclopedia](/miniCTF2021/miniCTF2021_file/sasuke_paw/README.MD) | General skill | `ISPCLUB{SO_WEIRD_CAT}` |
- | [Faster!!!]() |Misc | `ISPCLUB{r1ck_r0ll_4g41n}`|
- | [First Generation]() | 	Misc | `ISPCLUB{CAPTURE_THE_FLAG}` |
- | [Kakuremino no Jutsu]() | Misc |`ISPCLUB{h1d3_f1l3_1n_p1ctur3}`|
- | [Honest or Tricky](/miniCTF2021/miniCTF2021_file/tricky_or_honest/README.md) | Programming | `ISPCLUB{m4th_f0R_dUmm13S!!!!!!!}` |  
- | [Tricky or Honest](/miniCTF2021/miniCTF2021_file/tricky_or_honest/README.md) | Programming | `ISPCLUB{F45T_a5_71ghtN1n9!!!!}` |
- | [Reverse no Jutsu]() | RE |`ISPCLUB{s3xY_n0_jnt5u_K4i_h4r3m}` |
- | [Kakureru]() | RE |`ISPCLUB{W3ll_c0m3_t0_r3vers!n9}` |
- | [Furipputon - Reveal of the Truth](/miniCTF2021/miniCTF2021_file/Furipputon.md) | RE  |`ISPCLUB{DekuHoho}`|
- | [Isekai with truck-kun](/miniCTF2021/miniCTF2021_file/isekai/README.md) | Warm up |`ISPCLUB{p0w3R_oF_l0V3!!!}`|
+ | [Discord](#welcome-discord) | Welcome |  `ISPCLUB {4r3_y0u_r34dy}` |
+ | [Dōnyū](#welcome-dōnyū) | Welcome | `ISPCLUB{900D_LUCK_B4BY}` |
+ | [Chuunin Exam](#crypto-chuunin-exam) |Crypto	| `ISPCLUB{s3cr3t_pr0t3ct0r}` |
+ | [Base no Jutsu](#crypto-base-no-jutsu) | Crypto |  `ISPCLUB{b4s3_1s_n0t_tk4t_d1ff1cult}` |
+ | [Gravity Falls Bill](#crypto-gravity-falls-bill) | Crypto |  `ISPCLUB{BJLL_CJPKER}` |
+ | [Covi no Dokumushi](#forensic-covi-no-dokumushi) | Forensic | `ISPCLUB{11919}` |
+ | [Daichidoukaku](#forensic-daichidoukaku)| Forensic |  `ISPCLUB{5p1it_91f}` |
+ | [Sagasu no Jutsu](#forensic-sagasu-no-jutsu) | Forensic |  `ISPCLUB{5uck_4_l0n9_w4y}` |
+ | [Rasen...Deku](#forensic-rasendeku) | Forensic |`ISPCLUB{m4q3ky0u_sk4rjnq4n}` |
+ | [Baika](#forensic-baika) | Forensic |  `ISPCLUB{ch0_b41k4_n0_jut5u}` |
+ | [Chess but not so Stress](#general-skill-chess-but-not-so-stress) |General skill|`ISPCLUB{G4MB1T_QU3EN}` |
+ | [Earth Hour](#general-skill-earth-our) | General skill| `ISPCLUB{OUREARTH}` |
+ | [Himitsu No Ninmu](#general-skill-himitsu-no-ninmu) | General skill| `ISPCLUB{w3lc0me_t0_1nn3r_s4nCtuM}` |
+ | [Start the new schoolyear](#general-skill-start-the-new-schoolyear) | General skill |`ISPCLUB{L1nux_1z_v3ry_c0nV3n1EnT}` |
+ | [Sasuke’s Paw Encyclopedia](#general-skill-sasukes-paw-encyclopedia) | General skill | `ISPCLUB{SO_WEIRD_CAT}` |
+ | [Faster!!!](#general-skill-sasukes-paw-encyclopedia) |Misc | `ISPCLUB{r1ck_r0ll_4g41n}`|
+ | [First Generation](#misc-first-generation) | Misc | `ISPCLUB{CAPTURE_THE_FLAG}` |
+ | [Kakuremino no Jutsu](#misc-kakuremino-no-jutsu) | Misc |`ISPCLUB{h1d3_f1l3_1n_p1ctur3}`|
+ | [Honest or Tricky](#programming-honest-or-tricky-tricky-or-honest) | Programming | `ISPCLUB{m4th_f0R_dUmm13S!!!!!!!}` |  
+ | [Tricky or Honest](#programming-honest-or-tricky-tricky-or-honest) | Programming | `ISPCLUB{F45T_a5_71ghtN1n9!!!!}` |
+ | [Reverse no Jutsu](#re-reverse-no-jutsu) | RE |`ISPCLUB{s3xY_n0_jnt5u_K4i_h4r3m}` |
+ | [Kakureru](#re-kakureru) | RE |`ISPCLUB{W3ll_c0m3_t0_r3vers!n9}` |
+ | [Furipputon - Reveal of the Truth](#re-furipputon---reveal-of-the-truth) | RE  |`ISPCLUB{DekuHoho}`|
+ | [Isekai with truck-kun](#warm-up-isekai-with-truck-kun) | Warm up |`ISPCLUB{p0w3R_oF_l0V3!!!}`|
  | [PHP no jutsu](#web-php-no-jutsu) | Web | `ISPCLUB{php_1s_Suck}`|
- | [Deku's Bird](#web-deku's-dird)  | Web | `ISPCLUB{4_G00D_PL4Y3R}`|
+ | [Deku's Bird](#web-dekus-bird)  | Web | `ISPCLUB{4_G00D_PL4Y3R}`|
  | [Kieru Odama Genso](#web-kieru-odama-genso) | Web | `ISPCLUB{c$$_!5_v3ry_34sy}`|
  | [Beginner](#web-beginner) | Web | `ISPCLUB{Not_the_first_time_huhh??}`|
  | [ISP Ichizoku SHOP](#web-isp-ichizoku-shop) | Web | `ISPCLUB{dung_gian_lan}`|
