@@ -1390,7 +1390,7 @@ Chú chim quý của nhà Deku được cái đẹp nhưng lại không có não
 http://134.209.97.157:5002/
 
 
-## Solution
+#### Solution
 ![](/miniCTF2021/miniCTF2021_file/bird/2.png)
 >Một game kiểu flappy bird khá là đơn giản, mục tiêu đã được nói rõ trong gợi ý là đạt 222 điểm.
 
