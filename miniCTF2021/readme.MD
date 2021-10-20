@@ -492,3 +492,56 @@ Sau khi đọc, ta thấy mỗi dữ kiện ứng với mật khẩu của từn
 Sau khi nhập đúng password ta nhận được 3 mảnh ghép và ghép lại ra flag
 
 Flag: ```ISPCLUB{L1nux_1z_v3ry_c0nV3n1EnT}```
+
+# General Skill: Sasuke’s Paw Encyclopedia
+
+#### Challenge
+
+Dù cho đã kiếm đc cả dấu chân của vua mèo nhưng papasuke vẫn còn thiếu dấu chân duy nhất của con mèo ma thuật. Papasuke nói sẽ tặng cho bất kì ai kiếm được dấu chân mèo đó 1 ấn chú cấp S. Hãy tìm ra nó và mang về cho papasuke!!!
+
+** nc 134.209.97.157 10001**
+
+#### Solution
+
+#### Author: Iluvinn
+
+Đề bài cho ta 1 địa chỉ ip và khi kết nối đến nó bằng công cụ `netcat` ngay lập tức có flag xuất hiện
+```
+iluvinn in ~/miniCTF2021 λ nc 134.209.97.157 10001
+            .       .
+            \`-"'"-'/
+             } 6 6 {
+            ==. Y ,==
+              /^^^\  .
+             /     \  )
+            (  )-(  )/
+            -""---""---   /
+           /   Ncat    \_/
+          (     ____
+           \_.=|____E
+
+Here your flag:
+ISPCLUB{SO_WEIRD_CAT}
+```
+Flag: ```ISPCLUB{SO_WEIRD_CAT}```
+
+# Misc: Faster!!!
+
+#### Challenge
+
+Tên Hiruyzawa Kuhan là kẻ có thân thủ rất nhanh. Bạn cần luyện tập cho đôi mắt của mình bắt kịp tốc độ của hắn. Hãy xem bạn đã đủ nhanh để theo dõi hắn chưa
+
+https://www.youtube.com/watch?v=95qVduCOWTc
+#### Solution
+
+Đi theo đường dẫn thì mình tới được 1 video khá quen :v
+Việc trước tiên cần làm khi gặp những challenge liên quan đến youtube đó là kiểm tra các phần mô tả cũng như phụ đề. Challenge này cũng như thế, flag được giấu trong phần phụ đề.
+[](/miniCTF2021/miniCTF2021_file/faster/img/2.png)
+>Tuy nhiên flag xuất hiện với tốc độ khá nhanh việc dừng lại từng khung hình để kiểm tra là tương đối khó, và flag của mình >cũng có hai ký tự giống nhau đứng cạnh nhau nên khá dễ nhầm lẫn.
+
+Challenge này mình thấy có một số bạn vào phần mở rộng cạnh chức năng lưu để mở bản ghi của video, tuy nhiên giờ cách đó không còn khả dụng.
+[](/miniCTF2021/miniCTF2021_file/faster/img/3.png)
+Các bạn có thể sử dụng 1 số trang web để down phụ đề youtube về ví dụ như downsub.com
+
+Flag: ```ISPCLUB{r1ck_r0ll_4g41n}```
+
