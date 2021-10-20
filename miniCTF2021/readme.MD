@@ -1429,4 +1429,127 @@ http://134.209.97.157:5004/
 
 - Flag: ```ISPCLUB{c$$_!5_v3ry_34sy}```
 
+# WEB: Shinra Tensei
+
+#### Challenge
+Hiruyzawa Kuhan đã lên kế hoạch phá hủy PTITgakure trong thời gian tới. Bạn có thể vượt thời gian để ngăn chặn kế hoạch của hắn không???
+
+http://18.118.154.214:5000/
+
+#### Solution
+
+![](https://i.imgur.com/fByXaj8.jpg)
+
+Mở đầu trang web ra thì mình sẽ thấy có vẻ như là có đồng hồ to đùng trên web và nếu nó chạy về 0 hết thì sẽ có flag xuất hiện
+
+Check thử source code xem sao :D
+
+![](https://i.imgur.com/oL0haqJ.png)
+
+![](https://memehai.net/assets/images/20210802/meo-that-vong-deo-gi-vai-loz-the.jpg)
+
+`Flag in here :D` nhưng check file main.asm thì toàn đống bùi nhùi :< lừa vl
+
+Tiếp theo đó thì mình sẽ check đến request xem sao 😣
+
+![](https://i.imgur.com/KzWMVAF.png)
+
+Mình thấy có 2 endpoints khác được gọi đó là `time.hypnguyen.workers.dev`, `logwork.com`, `cdn.logwork.com` 
+
+`logwork.com` thì khi mình truy cập vào thì thấy ra trang web tạo đồng hồ để nhúng embed vào trang web
+
+`time.hypnguyen.workers.dev` cái này có vẻ khá là đáng nghi khi mình xem response thì thấy nó trả về 1 dãy số có 13 chữ số thì mình đoán chắc nó là timestamp.
+
+![](https://i.imgur.com/pqvarLK.png)
+
+Mình thử trên trang `https://www.epochconverter.com` thì đúng nó là timestamp hiện tại thật :D
+
+![](https://i.imgur.com/3b6AcB3.png)
+
+![](https://memehai.net/assets/images/20210802/bo-nao-duoc-khai-sang-kien-thuc-ky-quai-nay-da-duoc-tiep-thu.jpg)
+
+Mình đoán là sẽ bypass vượt thời gian bằng cách cho cái timestamp này nhỏ xuống :D
+
+Ví dụ như 0 😎
+
+Mình dùng burpsuite của intercept để change response
+
+![](https://i.imgur.com/gFrtARW.png)
+
+Weo done!
+
+![](https://i.imgur.com/LfA20Jx.png)
+
+Flag: ```ISPCLUB{__H0W_TH3__F^CK_D1D__Y0U_93t__F14G_????}```
+
+# WEB: ISP Ichizoku SHOP
+
+#### Challenge
+Tại PTITgakure, chỉ có duy nhất một shop cho phép bán items, vũ khí... Nhưng trang web của shop lại bị dính XSS. Bạn có thể tìm ra payload và report cho admin khum?
+Chỉ cần alert ra: ISPCLUB
+
+Shop: http://104.248.144.252:5002/
+
+Send payload to admin: http://104.248.144.252:5002/admin
+
+# Solution
+![](https://i.imgur.com/JhUUCKu.png)
+
+Bài này thì chắc là XSS thật rùi
+
+Đầu tiên là mình sẽ xem các dòng code có ý nghĩa gì.
+
+`decodeURIComponent(document.location.search?.split('?')[1])` hàm này sẽ get ra params của url ví dụ như url có dạng `index.html?a=123` thì sẽ trả về `a=123`
+
+Sau đó content của `body` sẽ append thêm code HTML vào bằng innerHTML
+
+Đọc thêm: https://www.w3schools.com/jsref/prop_html_innerhtml.asp
+
+```javascript
+params.split('=')[0] === 'xss' ?
+            params.match(/xss=(.+?)$/)[1] :
+            'Do u know XSS ~.~ If you don\'t know then it\'s probably not for you.<br / > '
+```
+
+Đoạn này có vẻ chỉ là hiển thị thông thường chứ không thấy có cái gì đáng nghi lắm.
+
+```javascript
+paramURLEncoded = decodeURIComponent(params).split('').map(e => {
+            if (e.match(/\<|\>|\"|\'|\/|\\/)) return no_xss()
+            return e
+        }).join('')
+```
+
+Đáng nghi nhất là chỗ này, check trong cái params đó có 1 trong các kí tự `<`, `>`, `"`, `'`, `/`, `\` thì sẽ chuyển hướng đến trang cảnh báo.
+
+Mình sẽ thử xem thế nào
+
+`index.html?a=123` thì thấy chưa thấy có hiện tượng gì cả check source code thì thấy cái này:
+
+![](https://i.imgur.com/Z70ifuM.png)
+
+Adu có vẻ như query này được thực hiện bên phía server nữa, mình sẽ thử thay cứ tự thuộc đã bị filter vào xem
+
+![](https://i.imgur.com/t8lvuVR.png)
+
+Hmm có vẻ như tác giả đã lừa mình quả hơi đau khi mà code javascript frontend không có tác dụng gì lắm, tứk cái lồng ngực 😒.
+
+Nếu như tác giả cố tình làm vậy thì phải đánh lạc mình sang một hướng khác vì mình đoán cú lừa này chắc chắn sẽ có cú lừa khác trong đó, mình thấy thay vì truyền param vào theo kiểu `?` thì sao mình lại khum truyền router vào nhỉ 🤔.
+
+Đánh liền thử: `index.html/abc`
+
+Hmm nó vẫn work chứ không hề báo 404
+
+![](https://i.imgur.com/ubyAc3h.png)
+
+![](https://i.imgur.com/Kc1IshX.png)
+
+Có vẻ như tác giả cố tình hoặc không để ý nên `/` không hề bị filter các kí tự trên :D oh shit
+
+Done, payload: `/index.html/a=<script>alert('ISPCLUB')</script>`
+
+Gửi payload và tài khoản Discord cho admin để lấy flag thôi
+
+Flag: ```ISPCLUB{dung_gian_lan}```
+
 
