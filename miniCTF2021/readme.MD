@@ -1327,7 +1327,7 @@ You defeated the boss, here you flag: ISPCLUB{h34L_15_p0w3R}
 
 Flag: ```ISPCLUB{h34L_15_p0w3R}```
 
-# WEB: Beginneer
+# WEB: Beginner
 
 #### Challenge 
 
